@@ -4,7 +4,10 @@ import it1 from './image/item1.png'
 import it2 from './image/item2.png'
 import it3 from './image/item3.png'
 import it4 from './image/item4.png'
-// import a from './image/a1'
+import a1 from './image/a1.png'
+import a2 from './image/a2.png'
+import a3 from './image/a3.png'
+import a4 from './image/a4.png'
         
       
      function App() {
@@ -28,6 +31,8 @@ import it4 from './image/item4.png'
                         <div className="flex items-center space-x-4">
                             <input type="text" placeholder="What are you looking for?" className="border rounded px-4 py-2"/>
                             <i className="fas fa-search text-gray-500"></i>
+                            <i className="fas fa-heart text-gray-500"></i>
+                            <i className="fas fa-shopping-cart text-gray-500"></i>
                         </div>
                     </nav>
                     <main className="flex">
@@ -225,15 +230,9 @@ import it4 from './image/item4.png'
                     <h1 className="text-4xl font-bold mb-8">Browse By Category</h1>
                     </div>
                     
-                        {/* <h2 className="text-red-500 font-bold text-lg">Categories</h2>
-                        <h1 className="text-3xl font-bold">Browse By Category</h1> */}
+                       
                         <div className="grid grid-cols-6 gap-4 mt-4">
-                            {/* <CategoryCard icon="fas fa-mobile-alt" label="Phones" />
-                            <CategoryCard icon="fas fa-desktop" label="Computers" />
-                            <CategoryCard icon="fas fa-watch" label="SmartWatch" />
-                            <CategoryCard icon="fas fa-camera" label="Camera" active />
-                            <CategoryCard icon="fas fa-headphones" label="HeadPhones" />
-                            <CategoryCard icon="fas fa-gamepad" label="Gaming" /> */}
+                          
                         </div>
                     </div>
                     <div className="flex justify-around mb-8">
@@ -262,10 +261,7 @@ import it4 from './image/item4.png'
                             <p>Gaming</p>
                         </div>
                     </div>
-                    {/* <div className="mb-4">
-                        <span className="text-red-500">This Month</span>
-                        <h2 className="text-2xl font-bold">Best Selling Products</h2>
-                    </div> */}
+            
                     
                     
                     <div className="flex items-center mb-4 " >
@@ -275,25 +271,25 @@ import it4 from './image/item4.png'
                     <h1 className="text-4xl font-bold mb-8">Best Selling Products</h1>
                     <div className="flex justify-between items-center mb-8">
                         <div className="flex flex-col items-center">
-                            <img src='https://placehold.co/150x150' alt="Red coat" className="mb-2"/>
+                            <img src={a1} alt="Red coat" className="mb-2"/>
                             <p>The north coat</p>
                             <p className="text-red-500">$260 <span className="line-through text-gray-500">$360</span></p>
                             <p className="text-yellow-500"><i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> (65)</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <img src="https://placehold.co/150x150" alt="Gucci duffle bag" className="mb-2"/>
+                            <img src={a2} alt="Gucci duffle bag" className="mb-2"/>
                             <p>Gucci duffle bag</p>
                             <p className="text-red-500">$960 <span className="line-through text-gray-500">$1160</span></p>
                             <p className="text-yellow-500"><i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> (65)</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <img src="https://placehold.co/150x150" alt="RGB liquid CPU Cooler" className="mb-2"/>
+                            <img src={a3} alt="RGB liquid CPU Cooler" className="mb-2"/>
                             <p>RGB liquid CPU Cooler</p>
                             <p className="text-red-500">$160 <span className="line-through text-gray-500">$170</span></p>
                             <p className="text-yellow-500"><i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> (65)</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <img src="https://placehold.co/150x150" alt="Small BookSelf" className="mb-2"/>
+                            <img src={a4} alt="Small BookSelf" className="mb-2"/>
                             <p>Small BookSelf</p>
                             <p className="text-red-500">$360</p>
                             <p className="text-yellow-500"><i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> <i className="fas fa-star"></i> (65)</p>
